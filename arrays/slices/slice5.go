@@ -11,7 +11,6 @@
 Выходные данные
 Выведите значение второго по величине элемента.
 */
-
 package main
 
 import "fmt"
@@ -37,15 +36,12 @@ func main() {
 	sli[maxI1] = 0
 
 	maxV2 := sli[0]
-	// maxI2 := 0
 	for i := 0; i < len(sli); i++ {
 		if sli[i] > maxV2 {
 			maxV2 = sli[i]
-			// maxI2 = i
 		}
 	}
 	fmt.Println(maxV2)
-
 }
 
 // решено
