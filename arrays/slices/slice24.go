@@ -46,6 +46,7 @@ func main() {
 			temp := sli[i][j]
 			if temp == "C" || temp == "M" || temp == "Y" {
 				flag = 1
+				
 			}
 		}
 	}
