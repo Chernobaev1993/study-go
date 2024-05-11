@@ -1,28 +1,12 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 func main() {
-	var n, z int
-	fmt.Scan(&n)
+    fmt.Println("начало")
 
-	var m float64
-	m = math.Sqrt(float64(n))
-	z = int(m)
-
-	for i := 2; i <= z; i++ {
-		for n%i == 0 {
-			fmt.Print(i, " ")
-			n /= i
-
-		}
-	}
-
-	if n > 1 {
-		fmt.Print(n)
-	}
-
+    for i := 0; i < 5; i++ {
+        defer fmt.Println(i)
+    }
+    fmt.Println("конец")
 }
